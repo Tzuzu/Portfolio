@@ -1,15 +1,178 @@
+:root {
+    --purple: rgba(152, 39, 245, 0.15);
+    --blue: rgba(39, 98, 245, 0.15);
+    --red: rgba(245, 39, 39, 0.15);
+    --darkblue: rgba(21, 45, 141, 1);
+    --darkpurple: rgba(92, 21, 141, 1);
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: auto;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    text-align: center;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: var(--darkblue);
+}
+
+.nav-bar {
+    background-color: var(--purple);
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding-bottom: 5px;
+    color: var(--darkpurple);
 }
 
 .h-nav {
-    color: red;
     list-style: none;
-    float: right;
     font-size: 150%;
 }
 
 .h-nav a{
-    padding: 10px 10px;
+    padding: 5px;
     text-decoration: none;
+}
+
+#About-Me {
+    width: 50%;
+}
+
+#About-Me p { 
+    color: black;
+}
+
+#Projects {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    display: inline;
+}
+
+#Contact {
+    padding-bottom: 5px;
+}
+
+#Contact a {
+    text-decoration: none;
+    color: blue;
+}
+
+#Contact p {
+    color: black;
+}
+
+#Contact h2::before {
+    content: "✉ ";
+}
+
+#Contact h2::after {
+    content: " ✉";
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+main.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 400px;
+    height: 225px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 25px 25px 0px 0px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.card header {
+    padding: 2px;
+}
+
+.card header::before {
+    content: "☆ ";
+}
+
+.card header::after {
+    content: " ☆";
+}
+
+.card img {
+    width: 100%;
+    height: 90%;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--purple);
+}
+
+footer h4 {
+    color: var(--darkpurple);
+    padding: 5px;
+}
+
+footer p {
+    color: black;
+}
+
+@media screen and (max-width: 1346px) {
+    .nav-bar {
+        background-color: var(--blue);
+    }
+    footer {
+        background-color: var(--blue);
+    }
+    footer h4 {
+        color: rgba(21, 70, 141, 1);
+    }
+}
+
+@media screen and (max-width: 897px) {
+    .nav-bar {
+        background-color: var(--red);
+    }
+    footer {
+        background-color: var(--red);
+    }
+    footer h4 {
+        color: rgba(141, 21, 21, 1);
+    }
 }
