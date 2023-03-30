@@ -2,8 +2,6 @@
 
 ![Porfolio Website](/assets/images/example.jpg)
 
-![Github Repository](https://github.com/Tzuzu/Portfolio)
-
 If you wish to view the website, you may do so from [here](https://tzuzu.github.io/Portfolio/)
 
 ## Purpose
