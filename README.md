@@ -1,6 +1,6 @@
 # My Portfolio
 
-![Porfolio Website](/assets/images/example.jpg)
+![Porfolio Website](/assets/images/examplewebsite.jpg)
 
 If you wish to view the website, you may do so from [here](https://tzuzu.github.io/Portfolio/)
 
