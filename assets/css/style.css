@@ -1,3 +1,5 @@
+/* Variables Set */
+
 :root {
     --purple: rgba(152, 39, 245, 0.15);
     --blue: rgba(39, 98, 245, 0.15);
@@ -5,6 +7,8 @@
     --darkblue: rgba(21, 45, 141, 1);
     --darkpurple: rgba(92, 21, 141, 1);
 }
+
+/* Global Variables */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +21,8 @@ body {
     text-align: center;
 }
 
+/* Changing the color of the links depending on state */
+
 a:visited {
     color: white;
 }
@@ -25,10 +31,14 @@ a:hover {
     color: var(--darkblue);
 }
 
+/* Adjusting nav bar color */
+
 .nav-bar {
     background-color: var(--purple);
     padding-bottom: 10px;
 }
+
+/* Header adjustments for h2 elements*/
 
 h2 {
     padding-bottom: 5px;
@@ -45,6 +55,8 @@ h2 {
     text-decoration: none;
 }
 
+/* Adjusting about me sizes and color */
+
 #About-Me {
     width: 50%;
 }
@@ -53,34 +65,16 @@ h2 {
     color: black;
 }
 
+/* Adjusting Projects section */
+
 #Projects {
     width: 90%;
-    height: 100vh;
     margin: 0 auto;
     justify-content: center;
     display: inline;
 }
 
-#Contact {
-    padding-bottom: 5px;
-}
-
-#Contact a {
-    text-decoration: none;
-    color: blue;
-}
-
-#Contact p {
-    color: black;
-}
-
-#Contact h2::before {
-    content: "✉ ";
-}
-
-#Contact h2::after {
-    content: " ✉";
-}
+/* Adjusting card styling and sizing */
 
 main {
     display: flex;
@@ -97,15 +91,21 @@ main.header {
     width: 400px;
     height: 225px;
     text-align: center;
-    border: 5px solid black;
+    border: 5px solid var(--blue);
     border-radius: 25px 25px 0px 0px;
     font-weight: bold;
     margin-bottom: 10px;
-    background-color: black;
+    background-color: var(--purple);
 }
+
+/*.card:first-child {
+    width: 600px;
+    height: 425px;
+}*/
 
 .card header {
     padding: 2px;
+    color: black;
 }
 
 .card header::before {
@@ -118,26 +118,34 @@ main.header {
 
 .card img {
     width: 100%;
-    height: 90%;
+    height: 89%;
+} 
+
+.card
+
+/* Adjusting Contact section */
+
+#Contact {
+    padding-bottom: 5px;
 }
 
-input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#Contact a {
+    text-decoration: none;
+    color: blue;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+#Contact p {
+    color: black;
 }
 
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+/* Adding text decoration in the contact section */
+
+#Contact h2::before {
+    content: "✉ ";
+}
+
+#Contact h2::after {
+    content: " ✉";
 }
 
 footer {
@@ -152,6 +160,8 @@ footer h4 {
 footer p {
     color: black;
 }
+
+/* Size adjustment depending on screen size */
 
 @media screen and (max-width: 1346px) {
     .nav-bar {
